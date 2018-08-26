@@ -6,7 +6,7 @@
 
 
     <context:annotation-config/>
-
+    <bean class="main.java.quoters.DepricationHandlerBeanFactoryPostProcessor"/>
     <bean class="main.java.quoters.PostProxyInvokerContextListener"/>
     <bean class="main.java.quoters.ProfilingHandlerBeanPostProcessor"/>
     <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
