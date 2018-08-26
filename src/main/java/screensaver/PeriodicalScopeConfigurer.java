@@ -17,7 +17,7 @@ public class PeriodicalScopeConfigurer implements Scope {
         if (map.containsKey(s)) {
             Pair<LocalTime, Object> pair = map.get(s);
             int secondSinceLastRequest = LocalTime.now().getSecond() - pair.getKey().getSecond();
-            if (secondSinceLastRequest > 3) {
+            if (secondSinceLastRequest > 5) {
                 map.put(s, new Pair(LocalTime.now(), objectFactory.getObject()));
             }
         } else {
