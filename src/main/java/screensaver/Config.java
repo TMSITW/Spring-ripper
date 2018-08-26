@@ -33,7 +33,7 @@ public class Config {
         AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(Config.class);
         while (true){
             context.getBean(ColorFrame.class).showOnRandomPlace();
-            Thread.sleep(100);
+            Thread.sleep(50);
         }
     }
 
